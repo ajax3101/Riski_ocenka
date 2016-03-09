@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dt1" msprop:Generator_TableClassName="dt1DataTable" msprop:Generator_TableVarName="tabledt1" msprop:Generator_TablePropName="dt1" msprop:Generator_RowDeletingName="dt1RowDeleting" msprop:Generator_RowChangingName="dt1RowChanging" msprop:Generator_RowEvHandlerName="dt1RowChangeEventHandler" msprop:Generator_RowDeletedName="dt1RowDeleted" msprop:Generator_UserTableName="dt1" msprop:Generator_RowChangedName="dt1RowChanged" msprop:Generator_RowEvArgName="dt1RowChangeEvent" msprop:Generator_RowClassName="dt1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="descr" msprop:Generator_ColumnVarNameInTable="columndescr" msprop:Generator_ColumnPropNameInRow="descr" msprop:Generator_ColumnPropNameInTable="descrColumn" msprop:Generator_UserColumnName="descr" type="xs:string" minOccurs="0" />
+              <xs:element name="znach" msprop:Generator_ColumnVarNameInTable="columnznach" msprop:Generator_ColumnPropNameInRow="znach" msprop:Generator_ColumnPropNameInTable="znachColumn" msprop:Generator_UserColumnName="znach" type="xs:double" minOccurs="0" />
+              <xs:element name="name" msprop:Generator_ColumnVarNameInTable="columnname" msprop:Generator_ColumnPropNameInRow="name" msprop:Generator_ColumnPropNameInTable="nameColumn" msprop:Generator_UserColumnName="name" type="xs:string" minOccurs="0" />
+              <xs:element name="znach_text" msprop:Generator_ColumnVarNameInTable="columnznach_text" msprop:Generator_ColumnPropNameInRow="znach_text" msprop:Generator_ColumnPropNameInTable="znach_textColumn" msprop:Generator_UserColumnName="znach_text" type="xs:string" minOccurs="0" />
+              <xs:element name="z1" msprop:Generator_ColumnVarNameInTable="columnz1" msprop:Generator_ColumnPropNameInRow="z1" msprop:Generator_ColumnPropNameInTable="z1Column" msprop:Generator_UserColumnName="z1" type="xs:double" minOccurs="0" />
+              <xs:element name="z2" msprop:Generator_ColumnVarNameInTable="columnz2" msprop:Generator_ColumnPropNameInRow="z2" msprop:Generator_ColumnPropNameInTable="z2Column" msprop:Generator_UserColumnName="z2" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="DataTable1Key1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:dt1" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
