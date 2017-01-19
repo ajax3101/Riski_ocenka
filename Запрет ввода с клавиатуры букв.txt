@@ -1,0 +1,33 @@
+// Запрет ввода с клавиатуры букв
+        private void textBox_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            if ((Char.IsDigit(e.KeyChar) || (e.KeyChar == (char)Keys.Back) || (e.KeyChar == ',') || (e.KeyChar == '-')) & (e.KeyChar != '.'))
+            {
+                string s = textBox.Text;
+                if (e.KeyChar == ',')
+                {
+                    int i = s.IndexOf(",", 0, s.Length);
+                    if (i != (-1))
+                    {
+                        e.KeyChar = (char)Keys.None;
+                    }
+                }
+                if (e.KeyChar == '-')
+                {
+ 
+                    int i = s.Length;
+                    if (i > 0)
+                    {
+                        e.KeyChar = (char)Keys.None;
+                    }
+ 
+                }
+ 
+            }
+            else
+                e.KeyChar = (char)Keys.None;
+ 
+ 
+        }
+    }
+}
